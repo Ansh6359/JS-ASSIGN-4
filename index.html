@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+    <title>Movie Search Demo</title>
+</head>
+<body>
+    <h1>Movie Search Demo</h1>
+    <p id="student-info"></p>
+    <footer>
+    <!-- Add a link to the tutorial or documentation page -->
+    <p>Check out the <a href="https://www.omdbapi.com" target="_blank">OMDb API Documentation</a> for more information.</p>
+</footer>
+    <div>
+        <label for="search-input">Search for a movie:</label>
+        <input type="text" id="search-input" placeholder="Enter movie name">
+        <!-- Add a select dropdown for suggestions -->
+        <select id="suggestions">
+            <option value="rrr">RRR</option>
+            <option value="animal">Animal</option>
+            <option value="titanic">Titanic</option>
+            <option value="scam_1992">Scam 1992</option>
+            <option value="guru">Guru</option>
+        </select>
+        <button onclick="searchMovie()">Search</button>
+    </div>
+    <div id="api-data"></div>
+</body>
+</html>
